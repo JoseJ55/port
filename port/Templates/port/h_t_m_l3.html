@@ -1,0 +1,89 @@
+{%extends "port/base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="html-ex">
+    <p class="sum-text">This website was based on the website of a job company I used to work at. There website didn't look the best
+                so I thought of upgrading it, but I didn't know Django at the time so I wouldn't have known how to make a
+                login for it. I still like how this turned out especially since this was one of the first that I had finish
+                after I enter college.</p>
+    <div class="html-items">
+        <p class="page-title">Home Page</p>
+        <div class="page-full">
+            <img src="{% static 'images/html/partners/partners_home_full.jpeg' %}" alt="img of home page">
+        </div>
+        <div class="res-text">
+            <div class="res">
+                <img src="{% static 'images/html/partners/partners_home_res.jpeg' %}" alt="img of home page css">
+            </div>
+            <p>On this website the page layout was inspired by other pages I saw at the time it was made. The page has
+                two buttons at the bottom for logging in or for registering. When the screen is smaller the size of the
+                buttons are smaller and the font size is increased. I use media tags to make the page responsive.</p>
+        </div>
+        <p class="page-title">Home Page HTML</p>
+        <div class="page-html">
+            <img src="{% static 'images/html/partners/partners_home_html.jpeg' %}" alt="img of home page responsive">
+        </div>
+    </div>
+
+    <div class="html-items">
+        <p class="page-title">Who We Are Page</p>
+        <div class="page-full">
+            <img src="{% static 'images/html/partners/partners_who_full.jpeg' %}" alt="img of home page">
+        </div>
+        <div class="res-text">
+            <div class="res">
+                <img src="{% static 'images/html/partners/partners_who_res.jpeg' %}" alt="img of home page css">
+            </div>
+            <p>In this page I made all the boxes fixed sizes so they are all the same size with flex display. I then
+                stacked the boxes on top of each other for the page being responsive.</p>
+        </div>
+        <p class="page-title">Who We Are Page HTML</p>
+        <div class="page-html">
+            <img src="{% static 'images/html/partners/partners_who_html.jpeg' %}" alt="img of home page responsive">
+        </div>
+    </div>
+
+    <div class="html-items">
+        <p class="page-title">News Page</p>
+        <div class="page-full">
+            <img src="{% static 'images/html/partners/partners_news_full.jpeg' %}" alt="img of home page">
+        </div>
+        <div class="res-text">
+            <div class="res">
+                <img src="{% static 'images/html/partners/partners_news_res.jpeg' %}" alt="img of home page css">
+            </div>
+            <p>This page is a simple page and not much change when the screen in smaller. The main thing that change was
+                the font size for the page. </p>
+        </div>
+        <p class="page-title">News Page HTML</p>
+        <div class="page-html">
+            <img src="{% static 'images/html/partners/partners_news_html.jpeg' %}" alt="img of home page responsive">
+        </div>
+    </div>
+
+    <div class="html-items">
+        <p class="page-title">Locations Page</p>
+        <div class="page-full">
+            <img src="{% static 'images/html/partners/partners_local_full.jpeg' %}" alt="img of home page">
+        </div>
+        <div class="res-text">
+            <div class="res">
+                <img src="{% static 'images/html/partners/partners_local_res.jpeg' %}" alt="img of home page css">
+            </div>
+            <p>On this last page the idea was to make a drop down button which shows the content, but since that needs
+                javascript I was not able to do that. </p>
+        </div>
+        <p class="page-title">Locations Page HTML</p>
+        <div class="page-html">
+            <img src="{% static 'images/html/partners/partners_local_html.jpeg' %}" alt="img of home page responsive">
+        </div>
+    </div>
+
+    <p class="page-title-css">Partners' CSS</p>
+    <div class="page-css">
+        <img src="{% static 'images/html/partners/partners_css.jpeg' %}" alt="img of page css">
+    </div>
+</div>
+
+{% endblock content %}

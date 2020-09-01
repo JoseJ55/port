@@ -1,0 +1,43 @@
+{%extends "port/base.html" %}
+{% load static%}
+{%block content%}
+    <div class="home-top-container">
+        <div class="con">
+            <h1> Jose Jimenez</h1>
+            <div class="sub">
+                <p>I am a student going for my bachelors degree in Computer Science. I have  been programming for a few years
+                    in python and html and I have recently started in C++. Python is the main language that I use so I have
+                    learned how to use different libraries, and APIs. I have no professional experience in the field, but
+                    I am a quick learner, and I work great with others, and passionate for programming.</p>
+            </div>
+        </div>
+    </div>
+    <div class="home-bottom-container">
+        <div class="contain">
+            <div class="column-examples">
+                <button class="page-button"><a href="{% url 'portfolio-python' %}">Python</a></button>
+                <div class="links">
+                    <a href="{% url 'python-example-1' %}"><img src="{% static 'images/python/guess_result_start.jpeg' %}"><p class="text-img">Guess Project</p></a>
+                </div>
+                <div class="links">
+                    <a href="{% url 'python-example-2' %}"><img src="{% static 'images/python/chart_result.jpeg' %}"><p class="text-img">Stock Project</p></a>
+                </div>
+                <div class="links">
+                    <a href="{% url 'python-example-3' %}"><img src="{% static 'images/python/cam_code.jpeg' %}"><p class="text-img">Cam</p></a>
+                </div>
+            </div>
+            <div class="column-examples">
+                <button class="page-button"><a href="{% url 'portfolio-h_t_m_l' %}">HTML</a></button>
+                <div class="links">
+                    <a href="{% url 'html-example-1' %}"><img src="{% static 'images/html/50s cafe/50s_cafe_home_full.jpeg' %}"><p class="text-img">50's Cafe</p></a>
+                </div>
+                <div class="links">
+                    <a href="{% url 'html-example-2' %}"><img src="{% static 'images/html/chat/chat_home_full.jpeg' %}"><p class="text-img">Chat Website</p></a>
+                </div>
+                <div class="links">
+                    <a href="{% url 'html-example-3' %}"><img src="{% static 'images/html/partners/partners_home_full.jpeg' %}"><p class="text-img">Partners</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

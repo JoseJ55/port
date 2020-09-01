@@ -1,0 +1,22 @@
+{%extends "port/base.html" %}
+{% load static %}
+{% block content %}
+<div class="python-ex">
+    <p class="sum-text">This project was simple and there was a lot of similar code out there, but as I was looking
+            around on how to make the camera detect people better I saw that machine learning can be used with it. I was
+            always planning on learning about machine learning so when I do finally start I plan to update this project
+            with machine learning aspects to make thing run better and easier.</p>
+    <p class="code-title">Guess code</p>
+    <div class="ex-steps">
+        <div class="ex-scroll">
+            <img src="{% static 'images/python/cam_code.jpeg' %}" alt="img of code">
+        </div>
+        <div class="result-ex">
+            <div class="ex-img">
+                <img src="{% static 'images/python/cam_result.jpeg' %}" alt="Img of end result of project">
+            </div>
+            <p>This image is just to show that the program works and can detect faces.</p>
+        </div>
+    </div>
+</div>
+{% endblock content %}

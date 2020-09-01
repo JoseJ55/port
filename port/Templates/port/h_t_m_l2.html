@@ -1,0 +1,93 @@
+{%extends "port/base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="html-ex">
+    <p class="sum-text">This is the website I learned Django with and for the most part it was easy. I made a base page in Django
+                which is the navbar and footer for all the pages. After that I made the page based on twitter so it has
+                similar parts. My website is unpolished and there is still more to be added, but I have most of the bigger
+                parts down even the Django commands. </p>
+    <div class="base_code">
+        <div class="based">
+            <img src="{% static 'images/html/chat/chat_base_html.jpeg' %}">
+        </div>
+        <p>This is the base code fo the navigation bar and the footer of the page.</p>
+    </div>
+    <div class="html-items">
+        <p class="page-title">Home Page</p>
+        <div class="page-full">
+            <img src="{% static 'images/html/chat/chat_home_full.jpeg' %}" alt="img of home page">
+        </div>
+        <div class="res-text">
+            <div class="res">
+                <img src="{% static 'images/html/chat/chat_home_res.jpeg' %}" alt="img of home page css">
+            </div>
+            <p>The home page has a login button that changes if logged in to a logout button. It also states the name of
+                the user if they are logged in. The page show post the are currently locally stored with information on
+                who made it and when.</p>
+        </div>
+        <p class="page-title">Home Page HTML</p>
+        <div class="page-html">
+            <img src="{% static 'images/html/chat/chat_home_html.jpeg' %}" alt="img of home page responsive">
+        </div>
+    </div>
+
+    <div class="html-items">
+        <p class="page-title">Register Page</p>
+        <div class="page-full">
+            <img src="{% static 'images/html/chat/chat_register_full.jpeg' %}" alt="img of home page">
+        </div>
+        <div class="res-text">
+            <div class="res">
+                <img src="{% static 'images/html/chat/chat_register_res.jpeg' %}" alt="img of home page css">
+            </div>
+            <p>The register page ask for username and password to make an account. The page uses bootstrap to get the
+                basic code and look which was changed a small amount.</p>
+        </div>
+        <p class="page-title">Register Page HTML</p>
+        <div class="page-html">
+            <img src="{% static 'images/html/chat/chat_register_html.jpeg' %}" alt="img of home page responsive">
+        </div>
+    </div>
+
+    <div class="html-items">
+        <p class="page-title">Login Page</p>
+        <div class="page-full">
+            <img src="{% static 'images/html/chat/chat_login_full.jpeg' %}" alt="img of home page">
+        </div>
+        <div class="res-text">
+            <div class="res">
+                <img src="{% static 'images/html/chat/chat_login_res.jpeg' %}" alt="img of home page css">
+            </div>
+            <p>The login page is simple with the main thing on the page is the login access. </p>
+        </div>
+        <p class="page-title">Login Page HTML</p>
+        <div class="page-html">
+            <img src="{% static 'images/html/chat/chat_login_html.jpeg' %}" alt="img of home page responsive">
+        </div>
+    </div>
+
+    <div class="html-items">
+        <p class="page-title">Logout Page</p>
+        <div class="page-full">
+            <img src="{% static 'images/html/chat/chat_logout_full.jpeg' %}" alt="img of home page">
+        </div>
+        <div class="res-text">
+            <div class="res">
+                <img src="{% static 'images/html/chat/chat_logout_res.jpeg' %}" alt="img of home page css">
+            </div>
+            <p>When someone logs out they are taken to this page and are given the option to log in again.</p>
+        </div>
+        <p class="page-title">Logout Page HTML</p>
+        <div class="page-html">
+            <img src="{% static 'images/html/chat/chat_logout_html.jpeg' %}" alt="img of home page responsive">
+        </div>
+    </div>
+
+    <p class="page-title-css">Chat CSS</p>
+    <div class="page-css">
+        <img src="{% static 'images/html/chat/chat_css.jpeg' %}" alt="img of page css">
+    </div>
+</div>
+
+{% endblock content %}

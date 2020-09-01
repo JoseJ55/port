@@ -1,0 +1,41 @@
+{%extends "port/base.html" %}
+{% load static %}
+{%block content%}
+    <div class="top-container">
+        <h1>Python</h1>
+        <h3>I have known python for over 3 years and over that time I have used different libraries like pandas, django,
+            numpy, pygame, etc. A good amount of my work is unpolished, but I tried to make different things
+            to challenge my skills and to find where I excel at. I really like python so I plan to learn
+            more on how to use it and the different libraries it has.</h3>
+    </div>
+    <div class="bottom-container">
+        <div class="example">
+            <div class="examples">
+                <a href="{% url 'python-example-1' %}"><img src="{% static 'images/python/guess_result_start.jpeg' %}"></a>
+            </div>
+            <p >This project is named "Guess" a guessing game made with pygame and works with json files to get the
+                question and answers. This was a simple project, but I didn't use any engine or help other than just
+                small things when I got stuck. The main area I struggled in when making this program was when I was making the looks
+                in pygame and changing them whenever there was a correct or wrong answer. I will update this program
+                later or replace it with a newer more polish one.</p>
+        </div>
+        <div class="example">
+            <p >This project that I made used bokeh and pandas datareader. For this project I was trying to work with
+                stocks data since there is a lot of it and it changes everyday. I used pandas to read the data and bokeh
+                to plot the data on the graph. I plan to add more to this project since I want to get better with data
+                in python.</p>
+            <div class="examples">
+                <a  href="{% url 'python-example-2' %}"><img src="{% static 'images/python/chart_result.jpeg' %}"></a>
+            </div>
+        </div>
+        <div class="example">
+            <div class="examples">
+                <a  href="{% url 'python-example-3' %}"><img src="{% static 'images/python/cam_code.jpeg' %}"></a>
+            </div>
+            <p >This project was simple and there was a lot of similar code out there, but as I was looking around on
+            how to make the camera detect people better I saw that machine learning can be used with it. I was always
+                planning on learning about machine learning so when I do finally start I plan to update this project
+                with machine learning aspects to make thing run better and easier.</p>
+        </div>
+    </div>
+{% endblock content %}

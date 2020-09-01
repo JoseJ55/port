@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="{%static 'port/main.css'%}">
+
+
+    {% if title%}
+        <title> Portfolio - {{title}}</title>
+    {% else %}
+        <title>Portfolio</title>
+    {% endif %}
+</head>
+<body>
+    <header class="site-header">
+      <nav class="navbar" >
+        <div class="container">
+          <div class="navbar-nav">
+              <div class="nav-main">
+                <a class="nav-item" href="{% url 'portfolio-home' %}">Home</a>
+                <a class="nav-item" href="{% url 'portfolio-python' %}">Python</a>
+                <a class="nav-item" href="{% url 'portfolio-h_t_m_l' %}">HTML</a>
+                <!--<a class="nav-item" href="{% url 'portfolio-c_plus_plus' %}">C++</a> us when c++ is ready-->
+              </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p>This is the footer</p>
+        </div>
+    </div>
+</body>
+</html>

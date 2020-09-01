@@ -1,0 +1,57 @@
+{%extends "port/base.html" %}
+{% load static %}
+{% block content %}
+<div class="python-ex ">
+    <p class="sum-text">This project is named "Guess" a guessing game made with pygame and works with json files to get the
+                question and answers. This was a simple project, but I didn't use any engine or help other than just
+                small things when I got stuck. The main area I struggled in when making this program was when I was making the looks
+                in pygame and changing them whenever there was a correct or wrong answer. I will update this program
+                later or replace it with a newer more polish one.</p>
+    <p class="code-title">Guess code</p>
+    <div class="ex-steps">
+        <div class="ex-scroll">
+            <img src="{% static 'images/python/guess_project_whole.jpeg' %}" alt="img of code">
+        </div>
+        <div class="result-ex">
+            <div class="ex-img">
+                <img src="{% static 'images/python/guess_result_start.jpeg' %}" alt="Img of end result of project">
+            </div>
+            <p>When running this code the first thing you will see is the main screen of the game. On the screen there
+                is five buttons, one is the question button which gives you the question and answers in their respected
+                box. The other four buttons are for the answers when you want to answer a question. Lastly, there is the
+                box for the question to appear at.</p>
+        </div>
+        <div class="result-ex">
+            <div class="ex-img">
+                <img src="{% static 'images/python/guess_project(1)_q.jpeg' %}" alt="Img of end result of project">
+            </div>
+            <p>When the question button is pressed the question and answers will appear in their respected box. The
+                question will be a random question from the json file and appear in the box. The answers on the other hand will all
+                be associated with that question, but they will be shuffled around every time the question is given so
+                they might appear in a different box than before. </p>
+        </div>
+        <div class="result-ex">
+            <div class="ex-img">
+                <img src="{% static 'images/python/guess_project(2)_wa.jpeg' %}" alt="Img of end result of project">
+            </div>
+            <p>When one of the four question buttons is pressed the program checks if it is correct and turns the button
+                red or green depending on the answer that was chosen.</p>
+        </div>
+        <div class="result-ex">
+            <div class="ex-img">
+                <img src="{% static 'images/python/guess_project(3)_ca.jpeg' %}" alt="Img of end result of project">
+            </div>
+            <p>When the answer is correct the button will turn green and the red one will turn back to normal. Even if
+                the answers are shuffled the program will check if it is correct and turn the buttons to their respected
+                color.</p>
+        </div>
+        <div class="result-ex">
+            <div class="ex-img">
+                <img src="{% static 'images/python/guess_project(3.1)_ca.jpeg' %}" alt="Img of end result of project">
+            </div>
+            <p>This last image is here just to show that the answers shuffle and the correct answers can still be picked
+                even after the shuffle.</p>
+        </div>
+    </div>
+</div>
+{% endblock content %}

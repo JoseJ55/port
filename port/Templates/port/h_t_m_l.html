@@ -1,0 +1,41 @@
+{%extends "port/base.html" %}
+{% load static %}
+{%block content%}
+    <div class="top-container">
+        <h1>HTML</h1>
+        <h3>HTML is the second language I learned and I learn CSS along with it. I have learn different layouts to use
+            websites and how to change them. I don't use HTML as much as python, so I am a little rough around the edges
+            with it, but I have most of the basics down and I am always trying to learn more. HTML is quite easy for me,
+            but I do struggle when designing web pages and when it comes to adding small details. I do plan to also learn
+            Javascript so I can make better websites and layouts.</h3>
+    </div>
+    <div class="bottom-container">
+        <div class="example">
+            <div class="examples">
+                <a href="{% url 'html-example-1' %}"><img src="{% static 'images/html/50s cafe/50s_cafe_home_full.jpeg' %}"></a>
+            </div>
+            <p >This website was practice for ecommerce website, but I was not able to learn the rest on how to make
+                the website an ecommerce site. None the less I still do like this website since it was one of the ones I
+                finished at the time, it also has a lot of pages and it looks simple so it should be easy to change and
+                update it. </p>
+        </div>
+        <div class="example">
+            <p >This is the website I learned Django with and for the most part it was easy. I made a base page in Django
+                which is the navbar and footer for all the pages. After that I made the page based on twitter so it has
+                similar parts. My website is unpolished and there is still more to be added, but I have most of the bigger
+                parts down even the Django commands. </p>
+            <div class="examples">
+                <a href="{% url 'html-example-2' %}"><img src="{% static 'images/html/chat/chat_home_full.jpeg' %}"></a>
+            </div>
+        </div>
+        <div class="example">
+            <div class="examples">
+                <a href="{% url 'html-example-3' %}"><img src="{% static 'images/html/partners/partners_home_full.jpeg' %}"></a>
+            </div>
+            <p>This website was based on the website of a job company I used to work at. There website didn't look the best
+                so I thought of upgrading it, but I didn't know Django at the time so I wouldn't have known how to make a
+                login for it. I still like how this turned out especially since this was one of the first that I had finish
+                after I enter college. </p>
+        </div>
+    </div>
+{% endblock content %}

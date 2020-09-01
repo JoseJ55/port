@@ -1,0 +1,38 @@
+{%extends "port/base.html" %}
+{% load static %}
+{% block content %}
+<div class="python-ex">
+    <p class="sum-text">This project that I made used bokeh and pandas datareader. For this project I was trying to work with
+                stocks data since there is a lot of it and it changes everyday. I used pandas to read the data and bokeh
+                to plot the data on the graph. I plan to add more to this project since I want to get better with data
+                in python.</p>
+    <p class="code-title">Guess code</p>
+    <div class="ex-steps">
+        <div class="ex-scroll">
+            <img src="{% static 'images/python/chart_whole.jpeg' %}" alt="img of code">
+        </div>
+        <div class="result-ex">
+            <div class="ex-img">
+                <img src="{% static 'images/python/chart_result.jpeg' %}" alt="Img of end result of project">
+            </div>
+            <p>When hovering around a data point the graph will show the data for that day. It will give the date of the
+                data point, when it closed and open at the end and beginning of the day, and the volume of how many
+                shares there are.</p>
+        </div>
+        <div class="result-ex">
+            <div class="ex-img">
+                <img src="{% static 'images/python/chart_result(1).jpeg' %}" alt="Img of end result of project">
+            </div>
+            <p>The bottom graph is a slider to a set time to the current day which can be used to move the top graph
+                from left to right. The top graph can't move left or right unless you press the button to do so on the
+                right of the graph.</p>
+        </div>
+        <div class="result-ex">
+            <div class="ex-img">
+                <img src="{% static 'images/python/chart_result(2).jpeg' %}" alt="Img of end result of project">
+            </div>
+            <p>This image is here to show that the slider did move the graph on top.</p>
+        </div>
+    </div>
+</div>
+{% endblock content %}
